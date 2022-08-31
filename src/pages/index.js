@@ -5,16 +5,17 @@ import LogoSection from '../components/logo-section.js'
 import ProjectSection from '../components/project-section.js'
 import MessageSection from '../components/message-section.js'
 import FooterSection from '../components/footer-section.js'
+import FormSection from "../components/form-section.js"
 
 const IndexPage = () => {
   return (
     <main>
-      {/* <HeaderSection /> */}
       <HeroSection />
       <AboutSection />
       <LogoSection />
       <ProjectSection />
-      <MessageSection />
+      {/* <MessageSection /> */}
+      <FormSection />
       <FooterSection />
     </main>
   )
