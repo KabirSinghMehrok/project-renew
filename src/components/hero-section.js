@@ -22,11 +22,11 @@ const HeroSection = () => {
           </h1>
           
           <p class="max-w-lg mt-4 sm:leading-relaxed sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!
+            We are a sustainability advisory firm with the vision to build a sustainable economy and sustainable future.
           </p>
 
           <div class="flex flex-wrap gap-4 mt-8 text-center">
-            <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-green-500 hover:bg-green-700 focus:outline-none focus:ring" href="/#message-section">
+            <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-green-500 hover:bg-green-700 focus:outline-none focus:ring" href="/#form-section">
               Get In Touch
             </a>
 

@@ -1,8 +1,42 @@
-import * as React from 'react'
+import React, { useState }  from "react"
+import axios from "axios";
 
 const FormSection = () => {
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null
+  });
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      form.reset();
+    }
+    console.log(serverState.status);
+  };
+
+  const handleOnSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://getform.io/f/f508eeb8-f605-47d1-b4d0-5d2931a40e9f",
+      data: new FormData(form)
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form); 
+      });
+  };
+
+
   return (
-    <section class="bg-gray-100">
+    <section class="bg-gray-100" id="form-section">
       <div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div class="lg:py-12 lg:col-span-2">
@@ -19,19 +53,20 @@ const FormSection = () => {
           </div>
 
           <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-            <form action="" class="space-y-4">
+            <form onSubmit={handleOnSubmit} class="space-y-4">
               <div>
                 <label class="sr-only" for="name">Name</label>
-                <input class="w-full p-3 text-sm border-gray-200 rounded-lg" placeholder="Name" type="text" id="name" />
+                <input class="w-full p-3 text-sm border border-gray-200 rounded-lg" placeholder="Name" type="text" id="name" />
               </div>
 
               <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
                   <label class="sr-only" for="email">Email</label>
                   <input
-                    class="w-full p-3 text-sm border-gray-200 rounded-lg"
+                    class="w-full p-3 text-sm border border-gray-200 rounded-lg"
                     placeholder="Email address"
                     type="email"
+                    name="email"
                     id="email"
                   />
                 </div>
@@ -39,43 +74,23 @@ const FormSection = () => {
                 <div>
                   <label class="sr-only" for="phone">Phone</label>
                   <input
-                    class="w-full p-3 text-sm border-gray-200 rounded-lg"
+                    class="w-full p-3 text-sm border border-gray-200 rounded-lg"
                     placeholder="Phone Number"
                     type="tel"
+                    name="phone"
                     id="phone"
                   />
-                </div>
-              </div>
-
-              <div class="text-center grid grid-cols-1 gap-4 sm:grid-cols-3">
-                <div>
-                  <input class="sr-only" id="option1" type="radio" tabindex="-1" />
-                  <label for="option1" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 1 </span>
-                  </label>
-                </div>
-
-                <div>
-                  <input class="sr-only" id="option2" type="radio" tabindex="-1" />
-                  <label for="option2" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 2 </span>
-                  </label>
-                </div>
-
-                <div>
-                  <input class="sr-only" id="option3" type="radio" tabindex="-1" />
-                  <label for="option3" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 3 </span>
-                  </label>
                 </div>
               </div>
 
               <div>
                 <label class="sr-only" for="message">Message</label>
                 <textarea
-                  class="w-full p-3 text-sm border-gray-200 rounded-lg"
+                  class="w-full p-3 text-sm border border-gray-200 rounded-lg"
                   placeholder="Message"
                   rows="8"
+                  type="text"
+                  name="message"
                   id="message"
                 ></textarea>
               </div>

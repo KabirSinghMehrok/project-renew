@@ -23,4 +23,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Project Renew</title>
+export const Head = () => <title>ProjectRenew</title>

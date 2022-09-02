@@ -35,7 +35,7 @@ const HeaderSection = () => {
               </li>
 
               <li>
-                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/#messsage-section">
+                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/#form-section">
                   Contact Us
                 </a>
               </li>
