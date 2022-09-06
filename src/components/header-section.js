@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const HeaderSection = () => {
   return (
@@ -17,25 +19,25 @@ const HeaderSection = () => {
 
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/#about-section">
+                <a class="  text-gray-500 transition hover:text-gray-500/75" onClick={() => scrollTo('#about-section')}>
                   About
                 </a>
               </li>
 
               <li>
-                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/#project-section">
+                <a class="  text-gray-500 transition hover:text-gray-500/75" onClick={() => scrollTo('#project-section')}>
                   Projects
                 </a>
               </li>
 
               <li>
-                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/">
+                <Link class="  text-gray-500 transition hover:text-gray-500/75" to="/coming-soon">
                   Blogs
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a class="  text-gray-500 transition hover:text-gray-500/75" href="/#form-section">
+                <a class="  text-gray-500 transition hover:text-gray-500/75" onClick={() => scrollTo('#form-section')}>
                   Contact Us
                 </a>
               </li>

@@ -46,10 +46,6 @@ const FormSection = () => {
               officia blanditiis repellat in, vero, aperiam porro ipsum laboriosam
               consequuntur exercitationem incidunt tempora nisi?
             </p>
-
-            <div class="mt-8">
-              <div class="mt-2 not-italic">Email us at devesh.singh@gmail.com or fill the form to get in touch</div>
-            </div>
           </div>
 
           <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">

@@ -1,9 +1,8 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 
 const ProjectSection = () => {
   return (
-    <section class="project-section">
+    <section class="project-section" id="project-section">
       <div class="max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto">
           <h2 class="text-3xl font-bold sm:text-4xl text-center">Completed projects</h2>

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import HeaderSection from '../components/header-section.js'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const HeroSection = () => {
   return (
@@ -26,11 +27,11 @@ const HeroSection = () => {
           </p>
 
           <div class="flex flex-wrap gap-4 mt-8 text-center">
-            <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-green-500 hover:bg-green-700 focus:outline-none focus:ring" href="/#form-section">
+            <a class="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-green-500 hover:bg-green-700 focus:outline-none focus:ring" onClick={() => scrollTo('#form-section')}>
               Get In Touch
             </a>
 
-            <a class="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-green-600 sm:w-auto hover:text-green-700 active:text-green-500 focus:outline-none focus:ring" href="/#about-section">
+            <a class="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-green-600 sm:w-auto hover:text-green-700 active:text-green-500 focus:outline-none focus:ring" onClick={() => scrollTo('#about-section')}>
               Learn More
             </a>
           </div>            

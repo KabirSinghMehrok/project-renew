@@ -7,7 +7,6 @@
   "keywords": [
     "gatsby"
   ],
-  
   "scripts": {
     "build:css": "postcss src/layouts/index.css -o src/layouts/generated.css",
     "watch:css": "postcss src/layouts/index.css -o src/layouts/generated.css -w",
@@ -17,13 +16,12 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
-
   "dependencies": {
     "gatsby": "^4.21.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "gatsby-plugin-postcss": "^5.21.0",

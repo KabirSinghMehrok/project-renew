@@ -1,17 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const NotFoundPage = () => {
+const ComingSoon = () => {
   return (
     <section class="bg-gray-50">
       <div class="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
         <div class="max-w-xl mx-auto text-center">
           <h1 class="text-3xl font-extrabold sm:text-5xl text-green-600">
-            404: Error
+            Coming Soon
           </h1>
 
           <p class="mt-4 sm:leading-relaxed sm:text-xl">
-            Oh no! We couldn't find what you are looking for.
+            Something amazing is coming here, stay tuned!
           </p>
 
           <div class="flex flex-wrap justify-center mt-8 gap-4">
@@ -25,6 +25,6 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default ComingSoon
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Coming Soon</title>
