@@ -17,7 +17,7 @@ const ProjectSection = () => {
         <div class="lg:space-x-12 my-12 flex flex-col lg:flex-row justify-center">
           <img
             class="lg:w-1/3 object-cover h-56 shadow-xl rounded-xl"
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=480"
             alt=""
           />
 

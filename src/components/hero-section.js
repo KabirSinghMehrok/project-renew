@@ -8,7 +8,7 @@ const HeroSection = () => {
       
       <img
         class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-        src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51"
+        src="https://images.unsplash.com/photo-1565728744382-61accd4aa148?w=1920"
         alt="Image showcasing sustainability"
       />
       <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>

@@ -10,7 +10,7 @@ const AboutSection = () => {
         >
           <img
           class="absolute inset-0 object-cover w-full h-full"
-          src="https://images.unsplash.com/photo-1560439514-e960a3ef5019"
+          src="https://images.unsplash.com/photo-1560439514-e960a3ef5019?w=1024"
           alt="Devesh Singh, founder of Project Renew, giving a speech"
           />
         </div>
