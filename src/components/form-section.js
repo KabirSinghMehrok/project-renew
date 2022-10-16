@@ -42,9 +42,7 @@ const FormSection = () => {
           <div class="lg:py-12 lg:col-span-2">
             <h2 class="text-3xl font-bold sm:text-4xl text-center lg:text-left">Let us help you be more sustainable</h2>
             <p class="mt-4 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor
-              officia blanditiis repellat in, vero, aperiam porro ipsum laboriosam
-              consequuntur exercitationem incidunt tempora nisi?
+            Feel free to contact us through this form with any questions or comments you may have. We will get back to you as soon as possible.
             </p>
           </div>
 
@@ -94,7 +92,7 @@ const FormSection = () => {
               <div class="mt-4">
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto"
+                  class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-green-500 hover:bg-green-700 focus:outline-none focus:ring"
                 >
                   <span class="font-medium"> Send Enquiry </span>
 

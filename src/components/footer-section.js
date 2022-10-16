@@ -9,8 +9,7 @@ const FooterSection = () => {
         </div>
 
         <p class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-100">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+        We are a sustainability advisory firm with the vision to build a sustainable economy and sustainable future.
         </p>
 
         <ul class="flex justify-center gap-6 mt-12 md:gap-8">

@@ -10,7 +10,7 @@ const AboutSection = () => {
         >
           <img
           class="absolute inset-0 object-cover w-full h-full"
-          src="https://images.unsplash.com/photo-1560439514-e960a3ef5019?w=1024"
+          src="https://i.imgur.com/VjdaL6A.jpg"
           alt="Devesh Singh, founder of Project Renew, giving a speech"
           />
         </div>
@@ -22,7 +22,7 @@ const AboutSection = () => {
           ProjectRenew has its vision to become a strategic and operational partner in your sustainability strategy. We want to play a catalyst in achieving the sustainable goal of your organization. We turn sustainability risks into opportunities by creating road maps to achieve the organizational goal.
           </p>
           <p class="mt-4 text-gray-600">
-          Project renew works with different road maps and framework such as UNGC, IPCC, UN SDG, German Supply Chain Law (Lieferkettengesetz), EU taxonomy, GRI, TCFD, CDP, SBTI, SASB, IIRC, and OECD due diligence guidelines.
+          ProjectRenew works with different road maps and framework such as UNGC, IPCC, UN SDG, German Supply Chain Law (Lieferkettengesetz), EU taxonomy, GRI, TCFD, CDP, SBTI, SASB, IIRC, and OECD due diligence guidelines.
           </p>
 
           <div class="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -39,7 +39,7 @@ const AboutSection = () => {
               class="block p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
             >
 
-              <h6 class="mt-2 font-bold">6+ Years of Experience</h6>
+              <h6 class="mt-2 font-bold">3+ Years of Experience</h6>
 
               {/* <p class="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
                 Lorem ipsum dolor sit amet consectetur.
@@ -49,7 +49,7 @@ const AboutSection = () => {
               class="block p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
               >
 
-              <h6 class="mt-2 font-bold">Worked with Fortune 500 companies</h6>
+              <h6 class="mt-2 font-bold">Worked with global firms</h6>
 
               {/* <p class="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
                 Lorem ipsum dolor sit amet consectetur.

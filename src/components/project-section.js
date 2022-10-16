@@ -6,12 +6,6 @@ const ProjectSection = () => {
       <div class="max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto">
           <h2 class="text-3xl font-bold sm:text-4xl text-center">Completed projects</h2>
-
-          <p class="mt-4 text-gray-500 text-left lg:text-center">
-            Lorem ipsum, dolor sit ametconsectetur adipisicing elit. Consequuntur
-            aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
-            saepe laborum.
-          </p>
         </div>
 
         <div class="lg:space-x-12 my-12 flex flex-col lg:flex-row justify-center">
@@ -26,8 +20,7 @@ const ProjectSection = () => {
               Sustainable Procurement
             </h5>
             <p class="mt-2 text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum explicabo quidem voluptatum voluptas illo accusantium ipsam quis, vel mollitia? Vel provident culpa dignissimos possimus, perferendis consectetur odit accusantium dolorem amet voluptates aliquid, ducimus
+            During Master Thesis, Sustainable Procuement Project has been done to implement the different Sustainability criteria which include Transport CO2 Footprint, Secondary Research, Compliance Law, Code of Conduct, and Green Logistics. This included assessing International suppliers on the basis of these criteria and finding the most Sustainable Supplier across the globe. Master Thesis findings have been used by the organization to help them make better decisions during Supplier Assessment.
             </p>
           </div>
         </div>
